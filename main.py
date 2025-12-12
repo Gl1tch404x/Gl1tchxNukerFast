@@ -49,7 +49,7 @@ def print_menu():
 def about_tool():
     clear_screen()
     display_logo()
-    print_colored("\nAbout Glitched Tools Paid Nuker Tool:", Fore.MAGENTA)
+    print_colored("\nAbout Glitched Tools Nuker Tool:", Fore.MAGENTA)
     print_colored("Glitched Tools is a Discord server nuking tool", Fore.MAGENTA)
     print_colored("This tool allows you to perform various destructive actions on Discord servers At High Rated Speed using bot tokens.", Fore.MAGENTA)
     print_colored("\nFeatures:", Fore.MAGENTA)
@@ -285,7 +285,6 @@ async def start_nuking():
     try:
         intents = discord.Intents.all()
     except AttributeError:
-        # Fallback for older discord.py versions or executable issues
         try:
             intents = discord.Intents.default()
             intents.members = True
@@ -293,7 +292,6 @@ async def start_nuking():
             intents.messages = True
             intents.message_content = True
         except Exception:
-            # Last resort fallback
             intents = discord.Intents(
                 guilds=True,
                 members=True,
