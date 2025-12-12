@@ -17,6 +17,6 @@ def display_logo():
          {PURPLE}               
                                                                           
 {Fore.MAGENTA}Creator: {Fore.MAGENTA}Glitched Tools{Style.RESET_ALL}
-{Fore.MAGENTA}Glitched Tools Paid Discord Server Nuking Tool{Style.RESET_ALL}
+{Fore.MAGENTA}Glitched Tools Discord Server Nuking Tool{Style.RESET_ALL}
 """
     print(logo)
